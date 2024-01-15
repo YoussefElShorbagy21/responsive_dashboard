@@ -5,10 +5,7 @@ import 'package:responsive_dashboard/views/dashboard_view.dart';
 
 void main() {
   runApp(
-    DevicePreview(
-      enabled: !kReleaseMode,
-      builder: (context) => const ResponsiveDashBoard(),
-    ),
+    const ResponsiveDashBoard(),
   );
 }
 
@@ -18,9 +15,9 @@ class ResponsiveDashBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      useInheritedMediaQuery: true,
+/*      useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
+      builder: DevicePreview.appBuilder,*/
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,

@@ -20,6 +20,7 @@ class ItemDetails extends StatelessWidget {
       title: Text(itemDetailsModel.title,
           style: AppStyles.styleRegular16(context).copyWith(
             color: const Color(0xFF064060),
+            fontSize: getResponsiveFontSize(context,fontSize: 10)
           )),
       trailing: Text(
         itemDetailsModel.value,
